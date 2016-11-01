@@ -1,6 +1,6 @@
-# React Starter Kit
+# react-redux-immutable
 
-React开发中最好用的脚手架。
+React开发中最好用最“全面”的脚手架,在[react-starter-kit](https://github.com/bodyno/react-starter-kit) 基础上再升级，做到更全面
 
 这个启动包的设计是为了让你使用一整套最新最酷的前端技术，所有都是可配置，富特性，基于webpack已经提供代码热加载，使用sass预处理css，单元测试，代码覆盖率报告，代码分割等等更多。
 
@@ -8,7 +8,7 @@ React开发中最好用的脚手架。
 
 最后，如果没有大家的贡献，这个项目是不可能如此健壮的，所以，谢谢大家。
 
-觉得不错的话，请Star一下本项目，这是对作者最大的支持。
+觉得不错的话，请Star一下本项目，这是对作者最大的支持，谢谢大家。
 
 所有相关库已准备好，随时等待调用。
 
@@ -17,6 +17,8 @@ React开发中最好用的脚手架。
 * [redux](https://github.com/rackt/redux)
 * [react-router](https://github.com/rackt/react-router)
 * [react-router-redux](https://github.com/rackt/react-router-redux)
+* [immutable](https://github.com/facebook/immutable-js)
+* [redux-immutable](https://github.com/gajus/redux-immutable)
 * [webpack](https://github.com/webpack/webpack)
 * [babel](https://github.com/babel/babel)
 * [express](https://github.com/expressjs/express)
@@ -32,8 +34,8 @@ React开发中最好用的脚手架。
 确认好你的环境配置，然后就可以开始以下步骤。
 
 ```bash
-$ git clone https://github.com/bodyno/react-starter-kit.git
-$ cd react-starter-kit
+$ git clone https://github.com/lileilei/react-redux-immutable
+$ cd react-redux-immutable
 $ npm install                   # Install project dependencies
 $ npm start                     # Compile and launch
 ```
@@ -83,16 +85,17 @@ $ npm start                     # Compile and launch
 │   ├── store                # Redux指定块
 │   │   ├── createStore.js   # 创建和使用redux store
 │   │   └── reducers.js      # Reducer注册和注入
-│   └── routes               # 主路由和异步分割点
+│   └── routes               # 主路由和异步分割点，一个页面再一个文件夹来分割
 │       ├── index.js         # 用store启动主程序路由
 │       ├── Root.js          # 为上下文providers包住组件
 │       └── Home             # 不规则路由
-│           ├── index.js     # 路由定义和代码异步分割
+│           ├── action       # reducers/constants/actions的集合
 │           ├── assets       # 组件引入的静态资源
-│           ├── components   # 直观React组件
-│           ├── container    # 连接actions和store
-│           ├── modules      # reducers/constants/actions的集合
-│           └── routes **    # 不规则子路由(** 可选择的)
+│           ├── components   # 当前Home组建的子组件
+│           ├── container    # Home组建连接actions和store
+│           ├── reducers     # Home组建所有的reducers控制，以及初始化state的定义
+│           ├── routes **    # 不规则子路由(** 可选择的)
+│           └── index.js     # 路由定义和代码异步分割
 └── tests                    # 单元测试
 ```
 
@@ -118,11 +121,8 @@ Babel被配置[babel-plugin-transform-runtime](https://www.npmjs.com/package/bab
 
 如果没有大家的贡献，这个项目是不可能诞生的， 感谢所有为这个项目做出贡献的人。
 
-This program is inspired by [davezuko](https://github.com/davezuko)
+This program is inspired by [bodyno](https://github.com/bodyno/react-starter-kit)
+bodyno program by [kriasoft](https://github.com/kriasoft/react-starter-kit)
 
-* [Justin Greenberg](https://github.com/justingreenberg) - For all of your PR's, getting us to Babel 6, and constant work improving our patterns.
-* [Roman Pearah](https://github.com/neverfox) - For your bug reports, help in triaging issues, and PR contributions.
-* [Spencer Dixin](https://github.com/SpencerCDixon) - For your creation of [redux-cli](https://github.com/SpencerCDixon/redux-cli).
-* [Jonas Matser](https://github.com/mtsr) - For your help in triaging issues and unending support in our Gitter channel.
 
 Thanks you guys all the time.
