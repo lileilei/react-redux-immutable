@@ -4,26 +4,37 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
 import {connect} from 'react-redux'
-import {Checkbox} from 'antd'
-import './style.scss'
+import {fetchList, clearList} from '../action/ServiceList_action'
+import Menu from '../../../components/filterMenu'
 import List from '../../../components/serviceList/list'
 
 class ServiceChildrenView extends Component {
+  componentWillMount() {
+    this.props.clearList()
+  }
+
+  componentDidMount() {
+    this.props.fetchList()
+  }
+
   render() {
+    const {list, fetching} = this.props.servicesChild
     return (
       <div id="ServiceChildrenView">
-        <div className="filter-menu">
-          <p>
-            <span className="filter-type">提供系统</span>
-            <Checkbox>值域管理</Checkbox>
-            <Checkbox>病人字典</Checkbox>
-            <Checkbox>住院信息</Checkbox>
-            <Checkbox>财务字典</Checkbox>
-          </p>
-        </div>
-        <List title="子服务"/>
+        <Menu />
+        <List title="子服务" servicesList={{list,fetching}}/>
       </div>
     )
   }
 }
-export default connect()(ServiceChildrenView)
+const mapDispatchtoProps = {
+  fetchList,
+  clearList
+}
+
+const mapStateToProps = (state) => {
+  return {
+    servicesChild: state.toJS().servicesChild
+  }
+}
+export default connect(mapStateToProps, mapDispatchtoProps)(ServiceChildrenView)

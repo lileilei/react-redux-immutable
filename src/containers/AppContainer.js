@@ -16,7 +16,7 @@ class AppContainer extends Component {
     const {routes, store} = this.props
     const history = syncHistoryWithStore(browserHistory, store, {
       selectLocationState (state) {
-        return state.get('routing').toJS();
+        return state.get('routing').toObject();
       }
     })
     return (

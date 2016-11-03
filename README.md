@@ -117,6 +117,10 @@ Babel被配置[babel-plugin-transform-runtime](https://www.npmjs.com/package/bab
 
 如果你正在使用nginx处理程序，确保所有的路由都直接指向 `~/dist/index.html` 文件，然后让react-router处理剩下的事。如果你不是很确定应该怎么做，[文档在这里](https://github.com/reactjs/react-router/blob/master/docs/guides/Histories.md#configuring-your-server)。Express在脚手架中用于扩展服务和代理API，或者其它你想要做的事，这完全取决于你。
 
+##其他
+
+重写了fetch方法，插件配置全局无需引入使用。
+
 ## 谢谢大家
 
 如果没有大家的贡献，这个项目是不可能诞生的， 感谢所有为这个项目做出贡献的人。

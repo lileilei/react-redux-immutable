@@ -1,5 +1,5 @@
-import {Map} from 'immutable'
-import {REQUEST_LIST, REQUEST_SUCCESS, REQUEST_ERROR} from '../action/ServiceList_action'
+import {fromJS, is} from 'immutable'
+import {REQUEST_LIST, REQUEST_SUCCESS, REQUEST_ERROR, CLEAR_LIST} from '../action/ServiceList_action'
 const ACTION_HANDLERS = {
   [REQUEST_LIST]: (state, action) => (
     state.merge({...state, 'fetching': true})
@@ -9,10 +9,13 @@ const ACTION_HANDLERS = {
   ),
   [REQUEST_ERROR]: (state, action) => (
     state.merge({...state, fetching: false})
+  ),
+  [CLEAR_LIST]: (state, action) => (
+    state.merge({...state, fetching: false, list: []})
   )
 }
 
-const initialState = Map({
+const initialState = fromJS({
   fetching: false,
   list: []
 })

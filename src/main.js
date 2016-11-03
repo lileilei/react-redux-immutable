@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import 'babel-polyfill'
 import Immutable from 'immutable'
 import createStore from './store/createStore'
 import AppContainer from './containers/AppContainer'
@@ -7,7 +8,7 @@ import AppContainer from './containers/AppContainer'
 // ========================================================
 // Store Instantiation
 // ========================================================
-const initialState = Immutable.Map(window.___INITIAL_STATE__ || {})
+const initialState = Immutable.fromJS(window.___INITIAL_STATE__ || {})
 const store = createStore(initialState)
 
 // ========================================================

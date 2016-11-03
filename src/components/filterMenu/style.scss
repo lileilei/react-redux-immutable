@@ -1,0 +1,18 @@
+.filter-menu {
+  padding: 25px;
+  background-color: #FFFFFF;
+  color: #4A90E2;
+  line-height: 3;
+  .filter-type {
+    position: relative;
+    left: 8px;
+    display: inline-block;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 24px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #4A90E2;
+  }
+}

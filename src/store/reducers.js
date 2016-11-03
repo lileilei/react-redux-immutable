@@ -2,8 +2,8 @@ import {combineReducers} from 'redux-immutable'
 import locationReducer from './location'
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({
-    ...asyncReducers,
-    routing: locationReducer
+    routing: locationReducer,
+    ...asyncReducers
   })
 }
 export const injectReducer = (store, {key, reducer}) => {

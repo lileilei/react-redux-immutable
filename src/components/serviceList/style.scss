@@ -1,0 +1,39 @@
+.services-list {
+  margin-top: 20px;
+  min-height: 500px;
+  padding-bottom: 60px;
+  border: 1px solid transparent;
+  background-color: #FFFFFF;
+  h2.title {
+    text-align: center;
+    line-height: 56px;
+    margin: 0 15px;
+    color: #4A90E2;
+    border-bottom: 1px solid #e8e8e8;
+    .service-count {
+      font-size: 14px;
+      margin-left: 20px;
+      font-weight: normal;
+      color: #9B9B9B;
+    }
+  }
+  .list {
+    text-align: center;
+    .service {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      margin: 20px auto;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-size: contain;
+      .No {
+        position: absolute;
+        width: 100%;
+        bottom: 14px;
+        color: #FFFFFF;
+        font-size: 13px;
+      }
+    }
+  }
+}

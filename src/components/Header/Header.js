@@ -1,33 +1,12 @@
 import React from 'react'
-import { IndexLink, Link } from 'react-router'
-import './Header.scss'
+import { IndexLink } from 'react-router'
+import './style.scss'
 
 export const Header = () => (
-  <div>
-    <h1>React Starter Kit ----</h1>
+  <div id="header">
     <IndexLink to='/' activeClassName='route--active'>
-      首页
+      服务一体化
     </IndexLink>
-    {' · '}
-    <Link to='/counter' activeClassName='route--active'>
-      一个小案例
-    </Link>
-    {' · '}
-    <Link to='/zen' activeClassName='route--active'>
-      Zen
-    </Link>
-    {' · '}
-    <Link to='/elapse' activeClassName='route--active'>
-      Elapse
-    </Link>
-    {' · '}
-    <Link to='/route/88' activeClassName='route--active'>
-      Route
-    </Link>
-    {' · '}
-    <Link to='/notFound' activeClassName='route--active'>
-      404
-    </Link>
   </div>
 )
 

@@ -28,9 +28,7 @@ const initialState = Immutable.fromJS({
 })
 export default function locationReducer(state = initialState, action) {
   if (action.type === LOCATION_CHANGE) {
-    return state.merge({
-      locationBeforeTransitions: action.payload
-    })
+    return state.set("locationBeforeTransitions", action.payload)
   }
   return state
 }

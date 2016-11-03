@@ -18,7 +18,7 @@ const ACTION_HANDLERS = {
 const initialState = Map({
   fetching: false,
   token: '',
-  userName: '123',
+  userName: '',
   userPwd: ''
 })
 export default function loginReducer(state = initialState, action) {
