@@ -6,12 +6,12 @@ import logo from  '../../assets/logo.png'
 import keshi from  '../../assets/keshi.png'
 export const Header = () => (
   <div id="header">
-    <Link to="/dcms/home/config" activeClassName='active'>
-      <img style={{width:19}} src={keshi}/>系统配置</Link>
-    <Link to="/dcms/home/reported" activeClassName='active'>
-      <img style={{width:19}} src={keshi}/>数据上报</Link>
-    <Link to="/dcms/home/view" activeClassName='active'>
-      <img style={{width:19}} src={keshi}/>数据浏览</Link>
+    <Link to="" activeClassName='active'>
+      <img style={{width:19}} src={keshi}/>权限管理</Link>
+    <Link to="" activeClassName='active'>
+      <img style={{width:19}} src={keshi}/>数据统计</Link>
+    <Link to="" activeClassName='active'>
+      <img style={{width:19}} src={keshi}/>页面样板</Link>
     <span className="logoArea">
       <img src={logo}/>
     </span>
