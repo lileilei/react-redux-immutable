@@ -1,0 +1,158 @@
+#entity-view {
+  .entity-title {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CAC5C5;
+    h2 {
+      float: left;
+    }
+    .choose-area {
+      float: left;
+      margin-left: 15px;
+    }
+    .operate-area {
+      float: right;
+    }
+  }
+  h3 {
+    margin: 15px 0px;
+    float: left;
+    line-height: 28px;
+  }
+  .dataBase-connection, .searchConfig {
+    border: 1px solid #000000;
+    border-radius: 4px;
+  }
+  .dataBase-connection {
+    label.ant-radio-wrapper {
+      margin-right: 0;
+      padding: 0 10px;
+      i.anticon {
+        display: none;
+        margin: 0 5px;
+        line-height: 30px;
+        float: right;
+      }
+    }
+    label.ant-radio-wrapper:hover {
+      background-color: #efefef;
+      i.anticon {
+        display: inline-block;
+      }
+    }
+  }
+  #SelectEntity {
+    .searchConfig {
+      padding: 10px 20px;
+      label.ant-radio-wrapper {
+        margin-right: 20px;
+      }
+      button {
+        margin-left: 15px;
+      }
+    }
+  }
+
+
+  //查询实现配置(文档类型)
+  .check {
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-top: 20px;
+    .clip {
+      margin-right: 0;
+      padding: 10px 10px;
+      line-height: 40px;
+    }
+  }
+
+  //模型配置
+  #mark-area {
+    h3 {
+      padding: 20px 0 5px 0;
+      float: none;
+      margin: 0;
+    }
+    .mark-content {
+      height: 130px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      padding: 20px 15px;
+    }
+    }
+    //模型配置的字段列表样式
+    #fieldList{
+      .fieldHeader{
+        border-bottom: 1px solid #CAC5C5;
+        overflow: hidden;
+        h3{
+          width: 200px;
+          float: left;
+        }
+        .right{
+          float:right;
+          margin-right:15px;
+          margin-top: 20px;
+        }
+      }
+      .ant-table-row .operation{
+        width: 100px;
+        height: 18px;
+        margin: 0 auto;
+      }
+      .ant-table-row .operation .anticon{
+        padding:0 5px;
+        display: none;
+        font-size: 14px;
+      }
+      .ant-table-row:hover .operation .anticon{
+        display: inline-block;
+      }
+  }
+  .anticon{
+    cursor: pointer;
+  }
+}
+//modal样式改变(这个不能放在entity-view内)
+.newField {
+  .ant-form-item-label {
+    width: 95px;
+    text-align: center;
+  }
+}
+.ant-form-inline .ant-form-item>div{
+  vertical-align: top;
+}
+.ant-modal-footer{
+  border-top: none;
+}
+//新增连接样式改变
+.newConnection{
+  .ant-form-item-label{
+    width: 95px;
+    text-align: center;
+  }
+
+  .ant-modal-footer{
+    border: none;
+  }
+}
+//新增参数
+.newparams {
+  .ant-form-item-label {
+    text-align: center;
+    width: 62px;
+  }
+  .ant-form-inline .ant-form-item > div {
+    vertical-align: top;
+  }
+  .ant-modal-body {
+    text-align: center;
+  }
+}
+//字段编辑
+#fieldEditForm{
+  .ant-form-inline .ant-form-item{
+    width:45%;
+    margin-top:10px;
+  }
+}

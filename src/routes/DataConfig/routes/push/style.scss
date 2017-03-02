@@ -1,0 +1,21 @@
+#push {
+  border: 1px solid transparent;
+  .title {
+    margin:20px;
+    padding: 0 20px;
+    line-height: 40px;
+    border-bottom: 1px solid #CAC5C5;
+  }
+  .msgType{
+    text-align: center;
+    margin-top: 20px;
+    .ant-checkbox-wrapper {
+      font-size: 16px;
+    }
+  }
+  .submit{
+    text-align: center;
+    margin-top: 80px;
+  }
+
+}

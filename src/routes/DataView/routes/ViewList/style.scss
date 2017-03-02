@@ -1,0 +1,103 @@
+#ViewList{
+    .tabTitle{
+        position: relative;
+        .ant-tabs-bar{
+            border-bottom: 2px solid #9261EA;
+            margin-top: 20px;
+        }
+        .ant-tabs.ant-tabs-card>.ant-tabs-bar .ant-tabs-tab-active{
+            padding-bottom: 4px;
+            background: #9261EA;
+            color: #fff;
+        }
+        .ant-tabs-nav-container{
+            padding-left: 20px;
+        }
+        .ant-tabs.ant-tabs-card>.ant-tabs-bar .ant-tabs-tab{
+            border-radius: 0;
+            margin-right: 10px;
+            padding: 9px 20px 7px;
+        }
+        .ant-tabs-bar{
+            margin-bottom: 0;
+        }
+        .ant-tabs.ant-tabs-card>.ant-tabs-bar .ant-tabs-nav-container{
+            height: 39px;
+        }
+        .ant-tabs-tab.ant-tabs-tab-disabled{
+            display: none;
+        }
+        .searchInput{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 200px;
+        }
+        .anticon.anticon-file-text{
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .patName{
+            .title{
+                padding: 10px 10px;
+                margin: 0 auto;
+                border-bottom: 1px solid #D8D8D8;
+                img{
+                    vertical-align: middle;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+            }
+            .list{
+                padding: 20px 0;
+                .list-item{
+                    display: inline-block;
+                    width: 25%;
+                    margin-bottom: 50px;
+                    img{
+                        float: left; 
+                        margin-left: 40px;
+                        width: 46px;
+                    } 
+                    span{
+                        line-height: 42px;
+                        margin-left: 5px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .ant-tabs-tab-active.ant-tabs-tab{
+            background: #9261EA;
+            color: #fff;
+        }
+    }
+}
+#modalBox{
+    .ant-tabs-tab-active.ant-tabs-tab{
+        background: #9261EA;
+        color: #fff;
+        border-radius: 6px;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .ant-tabs-tab{
+        background: #fff;
+        border-radius: 6px;
+        border-bottom: 1px solid #d9d9d9;
+        margin-right: 0px;
+        width: 130px;
+    }
+    .ant-tabs{
+        text-align: center;
+    }
+    .ant-tabs-bar{
+        margin-bottom: 0;
+    }
+    .ant-tabs-nav-container{
+        margin-bottom: 10px;
+    }
+    .ant-tabs-nav{
+        float: none;
+    }
+}
+

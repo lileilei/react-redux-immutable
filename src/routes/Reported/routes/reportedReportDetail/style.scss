@@ -1,0 +1,59 @@
+#ReportedReportDetail {
+  //上部标题
+  .title {
+    padding-left: 20px;
+    background-color: #fff;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    > span {
+      font-size: 18px;
+    }
+    //返回按钮的字和图标的大小
+    .back {
+      cursor: pointer;
+      float: left;
+      > span {
+        font-size: 16px;
+      }
+      i {
+        width: 14px;
+      }
+    }
+  }
+
+  //下部内容
+  .detailContainer {
+    margin-top: 20px;
+    padding: 29px 0 0 20px;
+    background-color: #fff;
+
+    //搜索框
+    .searchForm {
+      .ant-row.ant-form-item {
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+}
+
+//上报数据表对话框
+.modalA {
+  .ant-modal-title {
+    text-align: center;
+  }
+  //输入框 '取消' 按钮样式
+  //.anticon-close-circle {
+  //  cursor: pointer;
+  //  color: #ccc;
+  //  transition: color 0.3s;
+  //  font-size: 12px;
+  //}
+  //.anticon-close-circle:hover {
+  //  color: #999;
+  //}
+}
+
+

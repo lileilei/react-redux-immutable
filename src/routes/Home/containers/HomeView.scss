@@ -1,0 +1,117 @@
+#home {
+  min-height: 100%;
+  background: rgba(145, 97, 234, 0.14);
+}
+
+.leftMenu {
+  overflow: auto;
+  position: fixed;
+  width: 140px;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  text-align: center;
+  background: #FDFEFE;
+  box-shadow: 1px 3px 10px 0 #EDC5B5;
+  transition: top 0.5s;
+  font-size: 14px;
+  ul li a {
+    display: block;
+    padding: 14px;
+    margin: 36px auto 0;
+    width: 100px;
+    color: #4A90E2;
+    border-radius: 5px;
+    transition: all 0.4s;
+    img {
+      width: 40px;
+      margin-bottom: 5px;
+    }
+    &:hover,
+    &.route--active {
+      background-color: #F6DDD3;
+    }
+  }
+}
+
+.rightContent {
+  margin-left: 150px;
+  margin-right: 10px;
+  min-height: 100%;
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.ant-btn-primary {
+  background: #9261EA;
+  border-color: #9261EA;
+}
+
+.ant-btn-primary:focus, .ant-btn-primary:hover {
+  background-color: #9261EA;
+  border-color: #9261EA;
+}
+
+.ant-btn-ghost:focus, .ant-btn-ghost:hover {
+  color: #9261EA;
+  border-color: #9261EA;
+}
+
+.ant-pagination-item:hover {
+  border-color: #9261EA;
+}
+
+.ant-pagination-item-active {
+  background-color: #9261EA;
+  border-color: #9261EA;
+}
+
+//按钮点击光环颜色
+.ant-btn-clicked:after {
+  border-color: #9261ea;
+}
+
+.ant-radio-checked, .ant-radio-inner {
+  border-color: #9261ea !important;
+}
+
+.ant-radio-inner:after {
+  background-color: #9261ea;
+  top: 3.5px
+}
+
+.ant-checkbox-checked .ant-checkbox-inner, .ant-checkbox-indeterminate .ant-checkbox-inner {
+  background-color: #9261ea;
+  border-color: #9261ea;
+}
+
+//覆盖tree的图标
+.ant-tree li span.ant-tree-switcher.ant-tree-noline_open:after {
+  content: url(../../assets/open.png);
+  transform: scale(.9) rotate(0deg);
+}
+
+.ant-tree li span.ant-tree-switcher.ant-tree-noline_close:after {
+  content: url(../../assets/close.png);
+  transform: rotate(0deg) scale(.9)
+}
+
+span.ant-tree-switcher.ant-tree-switcher-noop.ant-tree-noline_docu:after {
+  content: url(../../assets/lastChild_close.png);
+}
+
+.ant-checkbox-focused .ant-checkbox-inner, .ant-checkbox-wrapper:hover .ant-checkbox .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner {
+  border-color: #9261ea;
+}
+
+//table
+.ant-table table {
+  text-align: center;
+}
+
+.ant-table-thead > tr > th {
+  background: transparent;
+  border-bottom: 1px solid #D8D8D8;
+  text-align: center;
+}

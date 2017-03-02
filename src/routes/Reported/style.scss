@@ -1,0 +1,40 @@
+#Reported {
+  min-height: 100%;
+  background: rgba(145, 97, 234, 0.14);
+  .left {
+    overflow: auto;
+    position: fixed;
+    width: 140px;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    text-align: center;
+    background: #FDFEFE;
+    box-shadow: 1px 3px 10px 0 #9261ea;
+    transition: top 0.5s;
+    font-size: 14px;
+    ul li a {
+      display: block;
+      padding: 14px;
+      margin: 36px auto 0;
+      width: 100px;
+      color: #7843D7;
+      border-radius: 5px;
+      transition: all 0.4s;
+      img {
+        width: 40px;
+        margin-bottom: 5px;
+      }
+      &:hover,
+      &.route--active {
+        background-color: #E2D5F9;
+      }
+    }
+  }
+  .right {
+    margin-left: 150px;
+    margin-right: 10px;
+    //background-color: #FFFFFF;
+  }
+}

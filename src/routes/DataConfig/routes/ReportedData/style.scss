@@ -1,0 +1,147 @@
+#ReportedData {
+  padding: 25px;
+  .treeMenu, .Content {
+    padding: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  .Content {
+    color: #000000;
+    margin-left: 15px;
+    .tit {
+      margin: 15px 0 8px;
+    }
+    .sqlConnection, .searchConfig {
+      border: 1px solid #000000;
+      border-radius: 4px;
+    }
+    #queryModule {
+      .sqlConnection {
+        label.ant-radio-wrapper {
+          margin-right: 0;
+          padding: 0 10px;
+          i.anticon {
+            display: none;
+            margin: 0 5px;
+            line-height: 30px;
+            float: right;
+          }
+        }
+        label.ant-radio-wrapper:hover {
+          background-color: #efefef;
+          i.anticon {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .searchConfig {
+      padding: 10px 20px;
+      label.ant-radio-wrapper {
+        margin-right: 20px;
+      }
+      button {
+        margin-left: 15px;
+      }
+    }
+    .special {
+      border-bottom: 1px solid #CAC5C5;
+      padding-bottom: 5px;
+    }
+  }
+  .contentHeader {
+    padding: 15px 15px;
+    border-bottom: 1px solid #CAC5C5;
+    h2 {
+      float: left;
+    }
+    .choose-area {
+      float: left;
+      margin-left: 15px;
+    }
+    .operate-area {
+      float: right;
+    }
+  }
+  #taskModule {
+    .taskTime {
+      line-height: 28px;
+      padding: 15px 15px;
+      border: 1px solid #000;
+    }
+    .tit {
+      padding-left: 15px;
+    }
+    .reportedDataFormat {
+      border-bottom: 1px solid #CAC5C5;
+      h3 {
+        padding: 15px 0 5px 15px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.modalShow {
+  .ant-modal-title {
+    text-align: center;
+  }
+  .ant-form.ant-form-inline {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .ant-row {
+    margin-bottom: 10px;
+  }
+  .special .ant-input {
+    height: 24px;
+  }
+  .ant-form-inline .ant-form-item > div {
+    vertical-align: top;
+  }
+  .ant-modal-footer {
+    border: none;
+  }
+}
+
+.newparams {
+  .ant-form-item-label {
+    text-align: center;
+    width: 62px;
+  }
+  .ant-form-inline .ant-form-item > div {
+    vertical-align: top;
+  }
+  .ant-modal-body {
+    text-align: center;
+  }
+}
+
+//modal样式改变(这个不能放在entity-view内)
+.newField {
+  .ant-form-item-label {
+    width: 95px;
+    text-align: center;
+  }
+}
+
+.ant-form-inline .ant-form-item > div {
+  vertical-align: top;
+}
+
+.ant-modal-footer {
+  border-top: none;
+}
+//新增连接样式调整
+.newConnection {
+  .ant-form-item-label {
+    width: 95px;
+    text-align: center;
+  }
+}
+.ant-form-inline .ant-form-item>div{
+  vertical-align: top;
+}
+.ant-modal-footer{
+  border-top: none;
+}

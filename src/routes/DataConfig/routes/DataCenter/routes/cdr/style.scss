@@ -1,0 +1,55 @@
+#cdr-view {
+     h2,h3{
+        float:left;
+    }
+    .title{
+        padding-bottom:20px;
+        overflow:hidden;
+        border-bottom:1px solid #999;
+        .right{
+            float:right;
+            margin-right:21px;
+        }
+    }
+    .describle,.list{
+        margin-left:8px;
+        margin-top:10px;
+    }
+    .describle{
+       h3{
+           height:27px;
+           line-height:20px;
+           float:none;
+       }
+       .desCon{
+           border:1px solid #666;
+           height:180px;
+           padding:20px 15px;
+       }
+    }
+    .list{
+        .title{
+            padding-top:5px;
+            padding-bottom:10px;
+        }
+        .listContent{
+            overflow-y:auto;
+            margin-left:15px;
+            .ant-row{
+              height:50px;
+              line-height:50px;
+              .actions{
+                  display:none;
+                  i{
+                      font-size:16px;
+                      margin-right:6px;
+                      cursor: pointer;
+                  }
+              }
+            }
+            .ant-row:hover .actions{
+                display:block;
+            }
+        }
+    }
+}
